@@ -1,6 +1,9 @@
 PruebaFrontend
 Este proyecto fue generado usando Angular CLI versión 19.2.7.
 
+Clonar el repositorio
+git clone https://github.com/SebastianConde/prueba-angular.git
+
 Servidor de desarrollo
 Para iniciar un servidor de desarrollo local, ejecuta ng serve.
 
