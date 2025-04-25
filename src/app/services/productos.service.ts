@@ -20,6 +20,10 @@ export class ProductosService {
   } 
 
   getProductoPorId(id: string) {
-    return this.http.get<any>(`http://localhost:3000/productos/${id}`);
+    // URL en despliegue
+    return this.http.get<any>(`https://mockapi-iuyr.onrender.com/productos/${id}`);
+
+    // URL en local
+    //return this.http.get<any>(`http://localhost:3000/productos/${id}`);
   }  
 }
