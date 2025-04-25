@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class PaisService {
   // URL en despliegue
-  private apiUrl = 'https://mockapi-6q8y.onrender.com/paises';
+  private apiUrl = 'https://mockapi-2n01.onrender.com/paises';
   // URL en local
   // private apiUrl = 'http://localhost:3000/paises';  
 

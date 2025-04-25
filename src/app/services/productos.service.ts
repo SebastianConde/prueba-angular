@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ProductosService {
   // URL en despliegue
-  private apiUrl = 'https://mockapi-6q8y.onrender.com/productos';
+  private apiUrl = 'https://mockapi-2n01.onrender.com/productos';
 
   // URL en local
   //private apiUrl = 'http://localhost:3000/productos';  // URL de la mock API para usuarios

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class RegisterService {
   // URL en despliegue
-  private apiUrl = 'https://mockapi-6q8y.onrender.com/usuarios';  
+  private apiUrl = 'https://mockapi-2n01.onrender.com/usuarios';  
 
   // URL en local
   //private apiUrl = 'http://localhost:3000/usuarios';  // URL de la mock API para usuarios
