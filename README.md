@@ -1,39 +1,60 @@
 PruebaFrontend
 Este proyecto fue generado usando Angular CLI versión 19.2.7.
 
-Clonar el repositorio
+🔗 Enlace de despliegue
+Puedes ver el proyecto desplegado en:
+https://prueba-angular-app-01.web.app
+
+🚀 Instrucciones para ejecutar el proyecto en local
+1. Clonar el repositorio
+Clona el repositorio con el siguiente comando y entra a la carpeta del proyecto:
 git clone https://github.com/SebastianConde/prueba-angular.git
+cd prueba-angular
 
-Servidor de desarrollo
-Para iniciar un servidor de desarrollo local, ejecuta ng serve.
+2. Instalar dependencias
+Instala las dependencias necesarias ejecutando:
+npm install
 
-Una vez que el servidor esté corriendo, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente siempre que modifiques alguno de los archivos de origen.
+3. Ejecutar el servidor de desarrollo
+Inicia el servidor local con:
+ng serve
 
-#######################INFORMACIÓN###############################
-En local:
+Luego abre tu navegador y ve a:
+http://localhost:4200
+La aplicación se recargará automáticamente al detectar cambios en el código.
 
-Si estás en local puedes cambiar de los services de pais.service.ts, productos.service.ts y register.service.ts la apiUrl por la respectiva, si lo usas desde local dejas la que dice localhost y comentas la de despliegue. Por defecto está con la de despliegue de https://mockapi-iuyr.onrender.com que también te funcionará en local, entonces no es necesario cambiarla.
+🧪 Ejecutar pruebas unitarias
+Para ejecutar las pruebas unitarias con Karma, usa:
+ng test
 
-Por el contrario, si quieres cambiar del enlace de despligue a usar el localhost, lo puedes hacer así:
-JSON Server
-Para simular un backend local con datos JSON, ejecuta json-server --watch src/assets/mock.json --port 3000.
-Y deberás hacer lo del cambio de los comentarios mencionados antes para los services.
+🧩 Angular Material
+Si necesitas agregar Angular Material al proyecto, puedes hacerlo con:
+ng add @angular/material
 
-Esto iniciará una API simulada en http://localhost:3000/.
-##################################################################
+🖥️ Uso de API en local (opcional)
+Por defecto, el proyecto ya está configurado para usar la API desplegada en:
+https://mockapi-iuyr.onrender.com
+Esta funciona sin problemas tanto en producción como en desarrollo local, por lo que no es necesario cambiar nada para probar la app.
 
+Si prefieres usar una API local:
+Simula un backend local ejecutando:
+json-server --watch src/assets/mock.json --port 3000
 
-Agregar Angular Material
-Para agregar Angular Material a tu proyecto, ejecuta ng add @angular/material. Sigue las instrucciones para configurar el tema y las animaciones.
+Esto iniciará una API falsa en:
+http://localhost:3000
 
-Instalación de dependencias
-Asegúrate de instalar las dependencias necesarias ejecutando npm install.
+Cambia las URLs en los siguientes archivos para usar localhost:
 
-Ejecutar pruebas unitarias
-Para ejecutar las pruebas unitarias con el corredor de pruebas Karma, usa el comando ng test. Esto ejecutará las pruebas unitarias de tu proyecto.
+src/app/services/pais.service.ts
 
-El enlace de despliegue en el que está el proyecto es en: https://prueba-angular-app-01.web.app
+src/app/services/productos.service.ts
 
+src/app/services/register.service.ts
+
+Dentro de cada uno, comenta la línea con la URL de despliegue y descomenta la que apunta a localhost. Por ejemplo:
+
+// this.apiUrl = 'https://mockapi-iuyr.onrender.com';
+this.apiUrl = 'http://localhost:3000';
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
