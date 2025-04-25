@@ -1,0 +1,67 @@
+<app-header [titulo]="'Catálogo de productos'"></app-header>
+
+<!-- Filtro de búsqueda -->
+<mat-form-field appearance="fill" class="filtro-buscador">
+    <mat-label>Buscar</mat-label>
+    <input 
+      matInput 
+      placeholder="Escriba el nombre del producto"
+      [(ngModel)]="textoBusqueda" 
+      (ngModelChange)="filtrarPorNombre(textoBusqueda)" 
+    >
+    <button
+      mat-icon-button
+      matSuffix
+      aria-label="Ordenar por precio"
+      (click)="ordenarPorPrecio()"
+    > 
+        <mat-icon>sort</mat-icon>
+    </button>
+</mat-form-field>
+
+<!-- Mensaje si no hay productos -->
+<div *ngIf="mensajeNoResultados" class="no-resultados">
+    <p>{{ mensajeNoResultados }}</p>
+</div>
+
+<!--Listado de productos filtrados-->
+<div class="producto-grid">
+  <mat-card (click)="verDetalle(producto.id)" style="cursor: pointer;"
+            *ngFor="let producto of productosPaginados" class="producto-card">
+    <img 
+      mat-card-image 
+      [src]="producto.imagen" 
+      alt="{{ producto.nombre }}" 
+      class="producto-img"
+    />
+    <mat-card-title>{{ producto.nombre }}</mat-card-title>
+    <mat-card-subtitle class="precio-producto">\${{ producto.precio }}</mat-card-subtitle>
+    <mat-card-content>
+      <p class="categoria-texto">Categoría: {{ producto.categoria }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- Paginación -->
+<div class="paginacion" *ngIf="totalPages > 1">
+    <button 
+      mat-button 
+      color="primary" 
+      (click)="cambiarPagina(currentPage - 1)" 
+      [disabled]="currentPage === 1">
+      Anterior
+    </button>
+  
+    <span class="paginacion-info">
+      Página {{ currentPage }} de {{ totalPages }}
+    </span>
+  
+    <button 
+      mat-button 
+      color="primary" 
+      (click)="cambiarPagina(currentPage + 1)" 
+      [disabled]="currentPage === totalPages">
+      Siguiente
+    </button>
+</div>
+  

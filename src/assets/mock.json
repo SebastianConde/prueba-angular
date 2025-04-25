@@ -1,0 +1,304 @@
+{
+  "paises": [
+    {
+      "id": "1",
+      "nombre": "Afganistán"
+    },
+    {
+      "id": "2",
+      "nombre": "Albania"
+    },
+    {
+      "id": "3",
+      "nombre": "Alemania"
+    },
+    {
+      "id": "4",
+      "nombre": "Andorra"
+    },
+    {
+      "id": "5",
+      "nombre": "Angola"
+    },
+    {
+      "id": "6",
+      "nombre": "Antigua y Barbuda"
+    },
+    {
+      "id": "7",
+      "nombre": "Arabia Saudita"
+    },
+    {
+      "id": "8",
+      "nombre": "Armenia"
+    },
+    {
+      "id": "9",
+      "nombre": "Australia"
+    },
+    {
+      "id": "10",
+      "nombre": "Austria"
+    },
+    {
+      "id": "11",
+      "nombre": "Azerbaiyán"
+    },
+    {
+      "id": "12",
+      "nombre": "Bahamas"
+    },
+    {
+      "id": "13",
+      "nombre": "Bahréin"
+    },
+    {
+      "id": "14",
+      "nombre": "Bangladés"
+    },
+    {
+      "id": "15",
+      "nombre": "Barbados"
+    },
+    {
+      "id": "16",
+      "nombre": "Bélgica"
+    },
+    {
+      "id": "17",
+      "nombre": "Belice"
+    },
+    {
+      "id": "18",
+      "nombre": "Benín"
+    },
+    {
+      "id": "19",
+      "nombre": "Bielorrusia"
+    },
+    {
+      "id": "20",
+      "nombre": "Birmania"
+    },
+    {
+      "id": "21",
+      "nombre": "Bolivia"
+    },
+    {
+      "id": "22",
+      "nombre": "Bosnia y Herzegovina"
+    },
+    {
+      "id": "23",
+      "nombre": "Botsuana"
+    },
+    {
+      "id": "24",
+      "nombre": "Brasil"
+    },
+    {
+      "id": "25",
+      "nombre": "Brunéi"
+    },
+    {
+      "id": "26",
+      "nombre": "Bulgaria"
+    },
+    {
+      "id": "27",
+      "nombre": "Burkina Faso"
+    },
+    {
+      "id": "28",
+      "nombre": "Burundi"
+    },
+    {
+      "id": "29",
+      "nombre": "Bután"
+    },
+    {
+      "id": "30",
+      "nombre": "Cabo Verde"
+    },
+    {
+      "id": "31",
+      "nombre": "Camboya"
+    },
+    {
+      "id": "32",
+      "nombre": "Camerún"
+    },
+    {
+      "id": "33",
+      "nombre": "Canadá"
+    },
+    {
+      "id": "34",
+      "nombre": "Catar"
+    },
+    {
+      "id": "35",
+      "nombre": "Chile"
+    },
+    {
+      "id": "36",
+      "nombre": "China"
+    },
+    {
+      "id": "37",
+      "nombre": "Chipre"
+    },
+    {
+      "id": "38",
+      "nombre": "Colombia"
+    },
+    {
+      "id": "39",
+      "nombre": "Comoras"
+    },
+    {
+      "id": "40",
+      "nombre": "Congo"
+    },
+    {
+      "id": "41",
+      "nombre": "Congo (República Democrática del Congo)"
+    },
+    {
+      "id": "42",
+      "nombre": "Corea del Norte"
+    },
+    {
+      "id": "43",
+      "nombre": "Corea del Sur"
+    },
+    {
+      "id": "44",
+      "nombre": "Costa de Marfil"
+    },
+    {
+      "id": "45",
+      "nombre": "Costa Rica"
+    },
+    {
+      "id": "46",
+      "nombre": "Croacia"
+    },
+    {
+      "id": "47",
+      "nombre": "Cuba"
+    },
+    {
+      "id": "48",
+      "nombre": "Curazao"
+    },
+    {
+      "id": "49",
+      "nombre": "República Checa"
+    },
+    {
+      "id": "50",
+      "nombre": "Dinamarca"
+    }
+  ],
+  "usuarios": [
+  ],
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Ventilador de Piso",
+      "precio": 45,
+      "categoria": "Electrodomésticos",
+      "imagen": "assets/images/solo el ventilador de piso sin lo de los lados.png",
+      "descripcion": "Ventilador de piso moderno, ideal para refrescar cualquier habitación."
+    },
+    {
+      "id": "2",
+      "nombre": "Consola de Videojuegos",
+      "precio": 399,
+      "categoria": "Electrónica",
+      "imagen": "assets/images/solo la consola de videojuegos sin el televisor.png",
+      "descripcion": "Consola de videojuegos de última generación para disfrutar de los mejores títulos."
+    },
+    {
+      "id": "3",
+      "nombre": "Impresora Multifuncional",
+      "precio": 129,
+      "categoria": "Electrónica",
+      "imagen": "assets/images/solo la impresora sin todo eso a los lados.png",
+      "descripcion": "Impresora multifuncional con escáner y copiadora, ideal para el hogar o la oficina."
+    },
+    {
+      "id": "4",
+      "nombre": "Smartphone",
+      "precio": 299,
+      "categoria": "Electrónica",
+      "imagen": "assets/images/un celular.png",
+      "descripcion": "Teléfono inteligente con pantalla nítida y cámara de alta calidad."
+    },
+    {
+      "id": "5",
+      "nombre": "Laptop Gamer",
+      "precio": 899,
+      "categoria": "Computadores",
+      "imagen": "assets/images/un computador portatil.png",
+      "descripcion": "Computador portátil de alto rendimiento con tarjeta gráfica dedicada."
+    },
+    {
+      "id": "6",
+      "nombre": "Computador de Escritorio",
+      "precio": 749,
+      "categoria": "Computadores",
+      "imagen": "assets/images/un computador.png",
+      "descripcion": "Computador de escritorio potente, ideal para trabajo o gaming."
+    },
+    {
+      "id": "7",
+      "nombre": "Dron Profesional",
+      "precio": 499,
+      "categoria": "Electrónica",
+      "imagen": "assets/images/un dron realista para un catálogo de productos.png",
+      "descripcion": "Dron con cámara de alta definición y múltiples funciones de vuelo."
+    },
+    {
+      "id": "8",
+      "nombre": "Reloj Inteligente",
+      "precio": 199,
+      "categoria": "Tecnología",
+      "imagen": "assets/images/un reloj inteligente.png",
+      "descripcion": "Reloj inteligente con monitoreo de salud y conectividad total."
+    },
+    {
+      "id": "9",
+      "nombre": "Televisor 4K",
+      "precio": 699,
+      "categoria": "Electrodomésticos",
+      "imagen": "assets/images/un televisor.png",
+      "descripcion": "Televisor 4K de alta definición con sistema operativo integrado."
+    },
+    {
+      "id": "10",
+      "nombre": "Tablet Gráfica",
+      "precio": 149,
+      "categoria": "Tecnología",
+      "imagen": "assets/images/una tablet.png",
+      "descripcion": "Tablet gráfica ideal para diseñadores y creativos digitales."
+    },
+    {
+      "id": "11",
+      "nombre": "Oculus Quest",
+      "precio": 399,
+      "categoria": "Electrónica",
+      "imagen": "assets/images/unas oculus quest.png",
+      "descripcion": "Gafas de realidad virtual Oculus Quest para experiencias inmersivas."
+    },
+    {
+      "id": "12",
+      "nombre": "Audífonos Inalámbricos con Estación",
+      "precio": 179,
+      "categoria": "Tecnología",
+      "imagen": "assets/images/unos audífonos inalámbricos con su estación de carga.png",
+      "descripcion": "Audífonos inalámbricos de alta fidelidad con base de carga incluida."
+    }
+  ]
+}

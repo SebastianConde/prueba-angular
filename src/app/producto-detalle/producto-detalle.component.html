@@ -1,0 +1,13 @@
+<app-header [titulo]="'Detalles del producto: ' + producto?.nombre"></app-header>
+
+<div class="detalle-container">
+  <mat-card class="detalle-card" *ngIf="producto">
+    <img mat-card-image [src]="producto.imagen" alt="{{ producto.nombre }}" />
+    <mat-card-title>{{ producto.nombre }}</mat-card-title>
+    <mat-card-subtitle>\${{ producto.precio }}</mat-card-subtitle>
+    <mat-card-content>
+      <p>Categoría: {{ producto.categoria }}</p>
+      <p>Descripción: {{ producto.descripcion }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

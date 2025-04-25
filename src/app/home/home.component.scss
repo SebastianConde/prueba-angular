@@ -1,0 +1,118 @@
+.producto-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;
+    padding: 1rem;
+  
+    .mat-mdc-card {
+        flex: 1 1 calc(33.333% - 1rem);
+        margin-bottom: 1rem;
+        border-radius: 1rem !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        .mat-mdc-card-title {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: #333;
+          padding-left: 0.5rem;
+        }
+        
+        .mat-mdc-card-subtitle {
+          font-size: 1rem;
+          font-weight: 600;
+          color: #2f855a;
+          padding-left: 0.5rem;
+        }
+        
+        .mat-mdc-card-content {
+          padding: 0.5rem;
+          color: #4a5568;
+          font-size: 0.875rem;
+          padding-left: 0.5rem;
+        }
+      }
+      
+      .producto-img {
+        width: 100%;
+        object-fit: cover; 
+        border-radius: 1rem;
+      }
+      
+      @media (max-width: 768px) {
+        .mat-mdc-card {
+          flex: 1 1 calc(50% - 1rem); // Dos columnas en pantallas medianas
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .mat-mdc-card {
+          flex: 1 1 100%; // Una columna en pantallas pequeñas
+        }
+      }
+  }
+  
+
+.mat-mdc-form-field {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    width: 100%;
+    margin: 0 auto; /* Para que ocupe el ancho disponible */
+  }
+  
+.no-resultados {
+    color: hsl(240deg, 100%, 50%);
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.buscador-con-boton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  
+    .filtro-buscador {
+      width: 100%;
+      max-width: 500px;
+    }
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+  
+    .mat-mdc-button {
+      min-width: 120px;
+      text-transform: none;  // Evitar que los botones estén en mayúsculas
+      background-color: hsl(246deg 81% 85%);
+    }
+  
+    .paginacion-info {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    button[disabled] {
+      background-color: #f0f0f0 !important;
+      color: #bbb !important;
+    }
+  
+    /* Estilos personalizados para los botones */
+    button {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  

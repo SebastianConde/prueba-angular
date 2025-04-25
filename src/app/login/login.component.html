@@ -1,0 +1,47 @@
+<app-header [titulo]="'Inicio de sesión'"></app-header>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-container">
+    <!-- Correo -->
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Correo electrónico</mat-label>
+        <input matInput formControlName="email" />
+        <mat-error *ngIf="loginForm.get('email')?.hasError('required')">
+        El correo es obligatorio.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('email') 
+                    && !loginForm.get('email')?.hasError('required')">
+        El correo no es válido.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('maxlength') 
+                    && !loginForm.get('email')?.hasError('required') 
+                    && !loginForm.get('email')?.hasError('email')">
+        El correo no puede tener más de 50 caracteres.  
+        </mat-error>
+    </mat-form-field>
+
+    <!-- Contraseña -->
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput [type]="showPassword ? 'text' : 'password'" formControlName="password" />
+        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">
+        La contraseña es obligatoria.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('minlength') 
+                    && !loginForm.get('password')?.hasError('required')">
+        Debe tener al menos 8 caracteres.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('pattern') 
+                    && !loginForm.get('password')?.hasError('required') 
+                    && !loginForm.get('password')?.hasError('minlength')">
+        La contraseña debe contener al menos una letra mayúscula, una letra minúscula, un número, un carácter especial y máximo 20 caracteres.
+        </mat-error>
+    </mat-form-field>
+
+    <!-- Botón -->
+    <button mat-raised-button
+            [ngClass]="{'custom-button': true}" 
+            type="submit" 
+            [disabled]="loginForm.invalid">
+        Iniciar
+    </button>
+</form>

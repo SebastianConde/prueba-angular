@@ -1,0 +1,40 @@
+.detalle-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .detalle-card {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
+    img {
+      border-radius: 1rem 1rem 0 0;
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+    }
+  
+    .mat-mdc-card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      padding-left: 0.5rem;
+    }
+  
+    .mat-mdc-card-subtitle {
+      color: #2f855a;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding-left: 0.5rem;
+    }
+  
+    .mat-mdc-card-content {
+      font-size: 1rem;
+      color: #4a5568;
+      padding: 1rem 0rem 0.5rem 0.5rem;
+    }
+  }
+  
