@@ -202,6 +202,23 @@
     }
   ],
   "usuarios": [
+    {
+      "id": "b8d2",
+      "nombre": "Luis Fernando",
+      "email": "luissebastian.conde@utp.edu.co",
+      "password": "Sebas1234@",
+      "confirmPassword": "Sebas1234@",
+      "fechaNacimiento": "2015-04-23T05:00:00.000Z",
+      "genero": "masculino",
+      "intereses": {
+        "entretenimiento": true,
+        "tecnologia": true,
+        "naturaleza": false,
+        "cultura": false,
+        "deportes": false
+      },
+      "pais": "3"
+    }
   ],
   "productos": [
     {
