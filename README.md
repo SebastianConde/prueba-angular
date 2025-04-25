@@ -16,8 +16,8 @@ Esto iniciará una API simulada en http://localhost:3000/.
 
 Y si se mira desde el enlace de despliegue la API que lo simula está en: https://mockapi-iuyr.onrender.com
 
-##########################CUIDADO##################################
-Si estás en local deberás cambiar de los services de pais.service.ts, productos.service.ts y register.service.ts la apiUrl por la respectiva, si lo usarás desde local dejas la que dice localhost y comentas la de despliegue, y si lo usarás desde el enlace de despliegue dejas la que dice https://mockapi-iuyr.onrender.com y comentas la de localhost. Por defecto está con la de despliegue de https://mockapi-iuyr.onrender.com.
+##########################NOTA##################################
+Si estás en local puedes cambiar de los services de pais.service.ts, productos.service.ts y register.service.ts la apiUrl por la respectiva, si lo usas desde local dejas la que dice localhost y comentas la de despliegue, y si lo usas desde el enlace de despliegue dejas la que dice https://mockapi-iuyr.onrender.com y comentas la de localhost. Por defecto está con la de despliegue de https://mockapi-iuyr.onrender.com que también te funcionará en local.
 ###################################################################
 
 Agregar Angular Material
