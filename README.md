@@ -9,16 +9,19 @@ Para iniciar un servidor de desarrollo local, ejecuta ng serve.
 
 Una vez que el servidor esté corriendo, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente siempre que modifiques alguno de los archivos de origen.
 
+#######################INFORMACIÓN###############################
+En local:
+
+Si estás en local puedes cambiar de los services de pais.service.ts, productos.service.ts y register.service.ts la apiUrl por la respectiva, si lo usas desde local dejas la que dice localhost y comentas la de despliegue. Por defecto está con la de despliegue de https://mockapi-iuyr.onrender.com que también te funcionará en local, entonces no es necesario cambiarla.
+
+Por el contrario, si quieres cambiar del enlace de despligue a usar el localhost, lo puedes hacer así:
 JSON Server
 Para simular un backend local con datos JSON, ejecuta json-server --watch src/assets/mock.json --port 3000.
+Y deberás hacer lo del cambio de los comentarios mencionados antes para los services.
 
 Esto iniciará una API simulada en http://localhost:3000/.
+##################################################################
 
-Y si se mira desde el enlace de despliegue la API que lo simula está en: https://mockapi-iuyr.onrender.com
-
-##########################NOTA##################################
-Si estás en local puedes cambiar de los services de pais.service.ts, productos.service.ts y register.service.ts la apiUrl por la respectiva, si lo usas desde local dejas la que dice localhost y comentas la de despliegue, y si lo usas desde el enlace de despliegue dejas la que dice https://mockapi-iuyr.onrender.com y comentas la de localhost. Por defecto está con la de despliegue de https://mockapi-iuyr.onrender.com que también te funcionará en local.
-################################################################
 
 Agregar Angular Material
 Para agregar Angular Material a tu proyecto, ejecuta ng add @angular/material. Sigue las instrucciones para configurar el tema y las animaciones.
